@@ -33,7 +33,7 @@ const Example = (props) => {
           <Card body>
             <CardTitle>TEST YOUR KNOWLEDGE?</CardTitle>
             <CardText> <ModalExample /></CardText>
-            <Button>Learn More>></Button>
+            
           </Card>
           </div>
         </Col>
