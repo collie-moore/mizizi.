@@ -31,8 +31,12 @@ const Example = (props) => {
         <Col sm="4">
         <div className="cards-feel">
           <Card body>
-            <CardTitle>TEST YOUR KNOWLEDGE?</CardTitle>
-            <CardText> <ModalExample /></CardText>
+            <CardTitle><strong>TEST YOUR KNOWLEDGE?</strong></CardTitle>
+            <CardText>
+            <CardText>
+            Do you want to test how much general knowledge you have on how to maintain good health? Test your knowledge now!!.
+            </CardText>
+            <ModalExample /></CardText>
             
           </Card>
           </div>

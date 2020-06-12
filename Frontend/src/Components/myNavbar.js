@@ -34,12 +34,7 @@ const Navbar1 = () => {
             
           </Nav>
               <div className="nav justify-content-center">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#!">Active</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#!">Link</a>
-                  </li>
+                 
                   <li className="nav-item">
                   <a className="nav-link" aria-label="Mizizi on twitter" rel="noopener" href="https://twitter.com/TeamMizizi?s=09" title="Twitter">
                     <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
