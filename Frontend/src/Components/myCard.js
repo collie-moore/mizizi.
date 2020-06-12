@@ -1,48 +1,49 @@
 import React from 'react';
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+// eslint-disable-next-line no-unused-vars
+import { Card, Button, CardTitle, CardText, Row, Col, Jumbotron, Container} from 'reactstrap';
 import ModalExample from './Test';
+import './myCard.css'
 //test change
 
 
 const Example = (props) => {
+
   return (
-    
-      <Row>
+    <div className="">
+    <Row>
         <Col sm="4">
-          <div className="app-name">
-            <h3><strong>Mizizi</strong></h3>
-            <p><i>Your Medical Partner</i></p>
-        </div>
+          <Jumbotron className="container my-card">
+          <h1 className="display-3"> Mizizi</h1>
+          <p className="lead">The one stop shop for your medical information.</p>
+          <hr className="my-2" />
+          <p>We are dedicated to provide adequate, acurate and consistent medical information to anyone with no access to hospitals!</p>
+          <p className="lead">
+          <Button outline color="secondary">Learn More</Button>
+          </p>
+          </Jumbotron>
         </Col>
-        
-        <Col sm="4">
-        <div className="cards-feel">
+        <Col sm="3">
+          <div className="cards-feel">
           <Card body>
             <CardTitle><strong>DID YOU KNOW?</strong></CardTitle>
             <CardText>
             Your skin works hard. Not only is it the largest organ in the body, but it defends against disease and infection, 
             regulates your temperature and aids in vitamin production.
             </CardText>
-            <Button>Learn More>></Button>
+            <Button outline color="secondary">Learn More>></Button>
           </Card>
           </div>
         </Col>
-
-        <Col sm="4">
+        <Col sm="3">
         <div className="cards-feel">
           <Card body>
-            <CardTitle><strong>TEST YOUR KNOWLEDGE?</strong></CardTitle>
-            <CardText>
-            <CardText>
-            Do you want to test how much general knowledge you have on how to maintain good health? Test your knowledge now!!.
-            </CardText>
-            <ModalExample /></CardText>
-            
+          <CardTitle><strong>TEST YOUR KNOWLEDGE?</strong></CardTitle>
+          <CardText> Your skin works hard. Not only is it the largest organ in the body, but it defends against disease and infection, regulates your temperature and aids in vitamin production.<ModalExample /></CardText>
           </Card>
-          </div>
+        </div>
         </Col>
-      </Row>
-   
+        </Row>
+        </div>
   );
 };
 

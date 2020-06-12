@@ -4,9 +4,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reacts
 import FetchTestData from './FetchTestData';
 const ModalExample = (props) => {
     const {
-      buttonLabel,
-      className
-    } = props;
+      buttonLabel    } = props;
   
     const [modal, setModal] = useState(false);
   
