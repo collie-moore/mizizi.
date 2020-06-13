@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.myFrame{
+  min-width: 400px;
+  width: 50%;
+  min-height: 500px;
+  border-radius: 3em;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.myMod{
+  font-style: italic;
+}
+
+.app-name{
+  margin: 2em;
+  color: black;
+  font: medium;
+}
+
+.cards-feel{
+  margin: 3em;
+  height: 10em;
+  max-height: 6em;
+}
+
+.startBtn {
+  margin-left: 9em;
+}
+
+.nav-link{
+  color: black;
+}
+
+.dropDwn{
+  max-height: min-content;
+  max-width: min-content;
+  fill: dodgerblue;
+  outline: none;
+  color: dodgerblue;
+}
+
+.dropTog{
+  max-height: min-content;
+  max-width: min-content;
+  fill: dodgerblue;
+  outline: none;
+}
+.App
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
