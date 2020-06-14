@@ -5,7 +5,6 @@ import FetchTestData from './FetchTestData';
 const ModalExample = (props) => {
     const {
       buttonLabel,
-      className
     } = props;
   
     const [modal, setModal] = useState(false);

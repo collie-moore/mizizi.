@@ -9,9 +9,8 @@ export default class FetchTestData extends Component {
        
         return (
             <div>
-               <iframe className="myFrame" src='https://webchat.botframework.com/embed/mzizi-bot?s=KQRFFgk1mew.ub-B8h7XQdoOdahs441I493EqnV0s2Wp_p4cUttt3WA'  
-               ></iframe>
-        </div>
+                <iframe title="unique" className="myFrame" src='https://webchat.botframework.com/embed/mizizi1-bot?s=qn9knVTSdzA.mFzOoq624dVG50w-C3gnZuYO6i4RHCdW4ovhPpRsAtM'></iframe>
+            </div>
         );
             }
     }
