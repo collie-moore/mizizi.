@@ -4,9 +4,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reacts
 import FetchTestData from './FetchTestData';
 const ModalExample = (props) => {
     const {
-      buttonLabel,
-      className
-    } = props;
+      buttonLabel    } = props;
   
     const [modal, setModal] = useState(false);
   
@@ -23,14 +21,14 @@ const ModalExample = (props) => {
                 </Form>
             </div>
 
-            <Modal isOpen={modal} toggle={toggle} className={className} >
+            <Modal isOpen={modal} toggle={toggle} className="myMod" >
                 <ModalHeader toggle={toggle}>Welcome to Mizizi!! Test your knowledge</ModalHeader>
                 <ModalBody>
                     <FetchTestData />
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={toggle}>Submit</Button>{' '}
-                    <Button color="secondary" onClick={toggle}>Cancel</Button>
+                    
+                    <Button color="primary" onClick={toggle}>I'm Done!</Button>
                 </ModalFooter>
             </Modal>
         </div>
