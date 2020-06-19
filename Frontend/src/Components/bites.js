@@ -3,7 +3,7 @@ import React from 'react';
 const Bites = (props) => {
 
   return (
-    <h4>Insect bites and stings</h4>
+    <h4>Animal bites and stings</h4>
   );
 }
 

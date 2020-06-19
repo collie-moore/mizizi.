@@ -9,34 +9,44 @@ import {
 
 const items = [
   {
-    src: '/img/burns/CHEM BURN 1.png',
-    altText: 'secure the environment by turning off fire',
-    caption: 'secure the environment by turning off fire '
+    src: '/img/bites/dog bite 1.png',
+    altText: 'examine the bite ',
+    caption: 'examine the bite  '
   },
   {
-    src: '/img/burns/CHEM burn 2.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: '/img/bites/dog bite 2.png',
+    altText: 'wash wound thoroughly with soap and water ',
+    caption: 'wash wound thoroughly with soap and water '
   },
   {
-    src: '/img/burns/CHEM burn 3.png',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: '/img/bites/dog bite 3.png',
+    altText: 'apply pressure to stop bleeding incase the wound is bleeding ',
+    caption: 'apply pressure to stop bleeding incase the wound is bleeding '
   },
   {
-    src: '/img/burns/CHEM burn 4.png',
-    altText: 'Slide 4',
-    caption: 'Slide 4'
+    src: '/img/bites/dog bite 4.png',
+    altText: 'apply antibiotic ointment ',
+    caption: 'apply antibiotic ointment '
   },
   {
-    src: '/img/burns/CHEM burn 5.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
+    src: '/img/bites/dog bite 5.png',
+    altText: 'bandage bite with clean cloth ',
+    caption: 'bandage bite with clean cloth '
   },
   {
-    src: '/img/burns/CHEM burn 6.png',
-    altText: 'Slide 6',
-    caption: 'Slide 6'
+    src: '/img/bites/dog bite 6.png',
+    altText: 'update tetanus vaccine',
+    caption: 'update tetanus vaccine'
+  },
+  {
+    src: '/img/bites/dog bite 7.png',
+    altText: 'find out dog’s vaccine status ',
+    caption: 'find out dog’s vaccine status '
+  },
+  {
+    src: '/img/bites/dog bite 8.png',
+    altText: 'monitor wound for swelling, pus, fever or worsening pain incase of these seek medical assistance  ',
+    caption: 'monitor wound for swelling, pus, fever or worsening pain incase of these seek medical assistance  '
   }
 ];
 

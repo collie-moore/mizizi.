@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
-import BruisedIprocedure from './bruisedeyeprocedure';
+import DogProcedure from './dogbiteprocedure';
 
-const BruisedI = (props) => {
+const Dogbyte = (props) => {
   const {
     className
   } = props;
@@ -14,10 +14,10 @@ const BruisedI = (props) => {
 
   return (
     <div>
-      <Button color="link" onClick={toggle}>Bruised Eye</Button>
+      <Button color="link" onClick={toggle}>Dog bite</Button>
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
         <ModalBody>
-          <BruisedIprocedure />
+          <DogProcedure />
          </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
@@ -27,4 +27,4 @@ const BruisedI = (props) => {
   );
 }
 
-export default BruisedI;
+export default Dogbyte;

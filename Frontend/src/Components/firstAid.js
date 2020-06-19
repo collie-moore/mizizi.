@@ -9,6 +9,7 @@ import HotWater from './hotWater';
 import BruisedI from './bruisedEye';
 import FireExpose from './fireExpo';
 import Bites from './bites';
+import Dogbyte from './doggybite';
 
 const FirstAid = (props) => {
  
@@ -29,20 +30,24 @@ const FirstAid = (props) => {
             <br></br>
             <HotWater />
             <br></br>
-            <Bites />
+            
           </td>
           
         </tr>
         <tr>
           <td><Cuts /></td>
           <td><BruisedI />
-          <br></br>
-          <AcidBurn />
-          <br></br>
-          <HotWater /></td>
+          </td>
           
         </tr>
        
+        <tr>
+          <td><Bites /></td>
+          <td>
+            <Dogbyte />
+          </td>
+          
+        </tr>
       </tbody>
     </Table>
     

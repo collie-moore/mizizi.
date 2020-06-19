@@ -10,33 +10,33 @@ import {
 const items = [
   {
     src: '/img/burns/CHEM BURN 1.png',
-    altText: 'secure the environment by turning off fire',
-    caption: 'secure the environment by turning off fire '
+    altText: 'remove casualty from area of exposure ',
+    caption: 'remove casualty from area of exposure  '
   },
   {
     src: '/img/burns/CHEM burn 2.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'remove all clothing or jewellery around wound ',
+    caption: 'remove all clothing or jewellery around wound '
   },
   {
     src: '/img/burns/CHEM burn 3.png',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'wash wound using only running water ',
+    caption: 'wash wound using only running water '
   },
   {
     src: '/img/burns/CHEM burn 4.png',
-    altText: 'Slide 4',
-    caption: 'Slide 4'
+    altText: 'apply a clean sterile dressing ',
+    caption: 'apply a clean sterile dressing '
   },
   {
     src: '/img/burns/CHEM burn 5.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
+    altText: 'use painkiller ',
+    caption: 'use painkiller '
   },
   {
     src: '/img/burns/CHEM burn 6.png',
-    altText: 'Slide 6',
-    caption: 'Slide 6'
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   }
 ];
 
