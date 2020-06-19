@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reactstrap';
 
-import FetchTestData from './FetchTestData';
+import FetchTestData from './fetchTestData';
 const ModalExample = (props) => {
     const {
-      buttonLabel,
-    } = props;
+      buttonLabel    } = props;
   
     const [modal, setModal] = useState(false);
   

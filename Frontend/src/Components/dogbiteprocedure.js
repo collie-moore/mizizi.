@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   Carousel,
@@ -10,26 +9,39 @@ import {
 
 const items = [
   {
-    Text: 'lagfailhsdjn',  
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: '/img/burns/CHEM BURN 1.png',
+    altText: 'secure the environment by turning off fire',
+    caption: 'secure the environment by turning off fire '
   },
   {
-    Text: 'lagfailhsdjn',  
+    src: '/img/burns/CHEM burn 2.png',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    Text: 'lagfailhsdjn',  
+    src: '/img/burns/CHEM burn 3.png',
     altText: 'Slide 3',
     caption: 'Slide 3'
+  },
+  {
+    src: '/img/burns/CHEM burn 4.png',
+    altText: 'Slide 4',
+    caption: 'Slide 4'
+  },
+  {
+    src: '/img/burns/CHEM burn 5.png',
+    altText: 'Slide 5',
+    caption: 'Slide 5'
+  },
+  {
+    src: '/img/burns/CHEM burn 6.png',
+    altText: 'Slide 6',
+    caption: 'Slide 6'
   }
 ];
 
-const myfacts = (props) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const DogProcedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
@@ -54,9 +66,9 @@ const myfacts = (props) => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.Text}
+        key={item.src}
       >
-        <item.Text alt={item.altText} />
+        <img src={item.src} alt={item.altText} /><br></br>
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
@@ -76,4 +88,4 @@ const myfacts = (props) => {
   );
 }
 
-export default myfacts;
+export default DogProcedure;

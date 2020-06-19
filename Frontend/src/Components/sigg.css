@@ -1,0 +1,48 @@
+.con{
+    background-color: #f9f9f9;
+    width:600px;
+    height:700px;
+    border-style: solid;
+    border-color: #f9f9f9;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin:auto;
+}
+.con h3{
+    font-weight: bolder;
+    padding:auto;
+    font-size: 45px;
+}
+
+.labo{
+    float: left;
+    margin-left:140px;
+    font-weight: bold;
+}
+.form-control{
+    margin:auto;
+    width:300px;
+    height:20px;
+    
+}
+.btn{
+    width: 310px;
+    height:30px;
+    background-color:#339FFF;
+    color: #ffffff;
+    border-color: #339FFF;
+    
+}
+.have{
+    float: right;
+margin-right: 140px;
+font-size: 14px;
+}
+.select{
+    margin:auto;
+    width:300px;
+    height:20px;
+}
