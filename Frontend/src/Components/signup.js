@@ -37,7 +37,9 @@ const Sign = (props) => {
                <option>Tkash</option>
              </Input>
             </div>
+            <br></br>
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <br></br>
                 <p className="have text-right">
                     Have an account? <a href="/.mysign.js">sign in</a>
                     

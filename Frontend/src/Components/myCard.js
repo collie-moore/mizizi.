@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, Button, CardTitle, CardText, Row, Col, Jumbotron, Container} from 'reactstrap';
 import ModalExample from './Test';
 import './myCard.css'
+import Myfacts from './facts';
 
 
 
@@ -26,12 +27,7 @@ const Example = (props) => {
           <div className="cards-feel">
           <Card body>
             <CardTitle><strong>DID YOU KNOW?</strong></CardTitle>
-           
-            <CardText>
-            Your skin works hard. Not only is it the largest organ in the body, but it defends against disease and infection, 
-            regulates your temperature and aids in vitamin production.
-            </CardText>
-            <Button outline color="secondary">Learn More>></Button>
+            <Myfacts />
           </Card>
           </div>
         </Col>

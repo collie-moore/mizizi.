@@ -4,6 +4,7 @@ import {
 } from 'reactstrap';
 import './mizizi.css';
 import { Link } from 'react-router-dom';
+import SignUp from './signupmodal';
 
 const Cards = (props) => {
   return (
@@ -32,7 +33,7 @@ const Cards = (props) => {
         <CardBody>
           <CardTitle><b>SYMPTOMS CHECKER</b></CardTitle>
           <CardText>Check out what you maybe suffering from.</CardText>
-          <Link to="/mysign">Learn More</Link>
+          <SignUp />
         </CardBody>
       </Card>
       <Card>
@@ -40,7 +41,7 @@ const Cards = (props) => {
         <CardBody>
           <CardTitle><b>FIND A CHEMIST</b></CardTitle>
           <CardText>Check out the nearest chemist in your location.</CardText>
-          <Button outline color="secondary">Find Now</Button>
+          <SignUp />
         </CardBody>
       </Card>
     </CardDeck>
