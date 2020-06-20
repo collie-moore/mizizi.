@@ -1,43 +1,20 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText
-} from 'reactstrap';
+import React from 'react';
 import './myNavbar.css'
 
-const Navbar0 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
+function Nav(){
 
   return (
-    <div className="">
-    <div className = "">
-      <Navbar outline color="primary">
-        <NavbarBrand href="/"><h2 style={{ color: 'black' }}> Mizizi</h2></NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/"><h3 style={{ color: 'black' }}>About Us </h3></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href= ""><h3 style={{ color: 'black' }}>Services</h3></NavLink>
-            </NavItem>
-            
-          </Nav>
-          <NavbarText><h3 style={{ color: 'black' }}>Accurate info...here...now </h3></NavbarText>
-        </Collapse>
-      </Navbar>
-    </div>
+    <div>
+      <nav className='nav'>
+        <h3>Mizizi</h3>
+        <ul className="nav-link">
+          
+          
+        </ul>
+      </nav>
+    
     </div>
   );
 }
 
-export default Navbar0;
+export default Nav;

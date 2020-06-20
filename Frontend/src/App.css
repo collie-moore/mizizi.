@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  background-color: white;
-  border: black;
 }
 
 .App-logo {
@@ -15,6 +13,43 @@
   }
 }
 
+.cuts{
+  margin: 3em;
+}
+
+.search{
+  padding-left: 5em;
+}
+
+.burnsbtn{
+  margin: 1em;
+}
+
+.searchbtn{
+  float: right;
+  padding: 6px 10px;
+  margin-right: 5px;
+  background: dodgerblue;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.myFrame{
+  min-width: 400px;
+  width: 50%;
+  min-height: 500px;
+  border-radius: 3em;
+}
+
+.className{
+  width: 100%;
+}
+
+.burnproc{
+  color: dodgerblue;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +60,45 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.myMod{
+  font-style: italic;
+}
 
+
+.app-name{
+  margin: 2em;
+  color: black;
+  font: medium;
+}
+
+.cards-feel{
+  margin: 3em;
+  height: 2em;
+}
+
+.startBtn {
+  margin-left: 9em;
+}
+
+.nav-link{
+  color: black;
+}
+
+.dropDwn{
+  max-height: min-content;
+  max-width: min-content;
+  fill: dodgerblue;
+  outline: none;
+  color: dodgerblue;
+}
+
+.dropTog{
+  max-height: min-content;
+  max-width: min-content;
+  fill: dodgerblue;
+  outline: none;
+}
+.App
 .App-link {
   color: #61dafb;
 }
@@ -37,7 +110,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-.container{
-  
 }

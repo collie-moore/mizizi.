@@ -9,28 +9,23 @@ import {
 
 const items = [
   {
-    src: '/img/dodgerblue.png',
-    altText: 'remove casualty from area of exposure ',
-    caption: 'remove casualty from area of exposure  '
+    src: '/img/cuts/chem eye 1.png',
+    altText: 'wash eye under running water for up to 15 minutes ',
+    caption: 'wash eye under running water for up to 15 minutes  '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'remove all clothing or jewellery around wound ',
-    caption: 'remove all clothing or jewellery around wound '
+    src: '/img/cuts/chem eye 2.png',
+    altText: 'apply cold compress ',
+    caption: 'apply cold compress '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'wash wound using only running water ',
-    caption: 'wash wound using only running water '
-  },
-  {
-    src: '/img/dodgerblue.png',
-    altText: 'apply a clean sterile dressing ',
-    caption: 'apply a clean sterile dressing '
+    src: '/img/cuts/chem eye 3.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   }
 ];
 
-const Myfacts = (props) => {
+const BruisedIprocedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -78,4 +73,4 @@ const Myfacts = (props) => {
   );
 }
 
-export default Myfacts;
+export default BruisedIprocedure;

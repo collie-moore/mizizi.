@@ -1,3 +1,5 @@
-.my-card{
-    background-color: black;
+.card{
+    background: black;
+    padding: 20px;
 }
+
