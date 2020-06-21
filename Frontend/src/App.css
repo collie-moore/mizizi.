@@ -13,14 +13,44 @@
   }
 }
 
+.cuts{
+  margin: 3em;
+}
+
+.search{
+  padding-left: 5em;
+}
+
+.burnsbtn{
+  margin: 1em;
+}
+
+.searchbtn{
+  float: right;
+  padding: 6px 10px;
+  margin-right: 5px;
+  background: dodgerblue;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
 .myFrame{
   min-width: 400px;
   width: 50%;
   min-height: 500px;
   border-radius: 3em;
 }
+
+.className{
+  width: 100%;
+}
+
+.burnproc{
+  color: dodgerblue;
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,6 +63,7 @@
   font-style: italic;
 }
 
+
 .app-name{
   margin: 2em;
   color: black;
@@ -41,8 +72,7 @@
 
 .cards-feel{
   margin: 3em;
-  height: 10em;
-  max-height: 6em;
+  height: 2em;
 }
 
 .startBtn {

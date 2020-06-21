@@ -9,26 +9,29 @@ import {
 
 const items = [
   {
-    Text: 'lagfailhsdjn',  
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: '/img/dodgerblue.png',
+    altText: 'Medical fact 1 ',
+    caption: 'Medical fact 1 '
   },
   {
-    Text: 'lagfailhsdjn',  
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: '/img/dodgerblue.png',
+    altText: 'Medical fact 2',
+    caption: 'Medical fact 2'
   },
   {
-    Text: 'lagfailhsdjn',  
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: '/img/dodgerblue.png',
+    altText: 'Medical fact 3 ',
+    caption: 'Medical fact 3 '
+  },
+  {
+    src: '/img/dodgerblue.png',
+    altText: 'apply a clean sterile dressing ',
+    caption: 'apply a clean sterile dressing '
   }
 ];
 
-const myfacts = (props) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const Myfacts = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
@@ -53,9 +56,9 @@ const myfacts = (props) => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.Text}
+        key={item.src}
       >
-        <item.Text alt={item.altText} />
+        <img src={item.src} alt={item.altText} /><br></br>
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
@@ -75,4 +78,4 @@ const myfacts = (props) => {
   );
 }
 
-export default myfacts;
+export default Myfacts;
