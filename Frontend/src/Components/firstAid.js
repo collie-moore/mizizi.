@@ -10,11 +10,12 @@ import BruisedI from './bruisedEye';
 import FireExpose from './fireExpo';
 import Bites from './bites';
 import Dogbyte from './doggybite';
-
+import './myCard.css'
 const FirstAid = (props) => {
  
   return (
-    <div>
+    <div className='card'>
+
           <h1>First Aid Procedures</h1>
          
           <h4>First aid is an essential life saving service in most emergencies.<br></br> Please follow the following instrustions keenly</h4>

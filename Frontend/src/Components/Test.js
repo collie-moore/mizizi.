@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reactstrap';
 
-import FetchTestData from './fetchTestData';
+import FetchTestData from './FetchTestData';
 const ModalExample = (props) => {
     const {
       buttonLabel    } = props;

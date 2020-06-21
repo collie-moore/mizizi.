@@ -10,18 +10,18 @@ import {
 const items = [
   {
     src: '/img/dodgerblue.png',
-    altText: 'remove casualty from area of exposure ',
-    caption: 'remove casualty from area of exposure  '
+    altText: 'Medical fact 1 ',
+    caption: 'Medical fact 1 '
   },
   {
     src: '/img/dodgerblue.png',
-    altText: 'remove all clothing or jewellery around wound ',
-    caption: 'remove all clothing or jewellery around wound '
+    altText: 'Medical fact 2',
+    caption: 'Medical fact 2'
   },
   {
     src: '/img/dodgerblue.png',
-    altText: 'wash wound using only running water ',
-    caption: 'wash wound using only running water '
+    altText: 'Medical fact 3 ',
+    caption: 'Medical fact 3 '
   },
   {
     src: '/img/dodgerblue.png',

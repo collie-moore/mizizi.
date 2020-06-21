@@ -12,7 +12,7 @@ const Footer = () => {
           <Col md="12">
             <h5 className="title"> </h5>
             <p></p>     
-            <div class="container p-3">
+            <div class="container p-3 my-footer">
             <div class="titles pb-3">
                 <h1 class="section-title text-center text-uppercase text-white">stay up to date to our news and offers</h1>
                 <h3 class="section-subtitle text-center text-white-50">A good start is to subscribe to our weekly newsletter.</h3>
