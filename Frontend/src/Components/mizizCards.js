@@ -4,7 +4,6 @@ import {
 } from 'reactstrap';
 import './myCard.css';
 import { Link } from 'react-router-dom';
-import SignUp from './signupmodal';
 
 const Cards = (props) => {
   return (
