@@ -10,8 +10,6 @@ import {
   NavbarText
 } from 'reactstrap';
 import './myNavbar.css'
-import Login from './mysign';
-import Sign from './signup';
 
 const Navbar0 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +31,7 @@ const Navbar0 = () => {
               <NavLink href= ""><h3 style={{ color: 'black' }}>Services</h3></NavLink>
             </NavItem>
             <NavbarText><h3 style={{ color: 'black' }}>Accurate info...here...now </h3></NavbarText>
-            <Login />
-               <Sign />
+            
           </Nav>
           <div className="nav justify-content-center">
                  
