@@ -13,7 +13,7 @@ const MyCard = (props) => {
   return (
     <div className="card">
     <Row>
-        <Col sm="4">
+        <Col lg="3">
           <Jumbotron className="container my-card">
           <h1 className="display-3"> Mizizi</h1>
           <p className="lead">The one stop shop for your medical information.</p>
@@ -24,7 +24,7 @@ const MyCard = (props) => {
           </p>
           </Jumbotron>
         </Col>
-        <Col sm="4">
+        <Col lg="3">
           <div className="">
           <Card body>
             <CardTitle><strong>DID YOU KNOW?</strong></CardTitle>
@@ -32,7 +32,7 @@ const MyCard = (props) => {
           </Card>
           </div>
         </Col>
-        <Col sm="4">
+      <Col lg="3">
         <div className="cards">
           <Card body>
           <CardTitle><strong>TEST YOUR KNOWLEDGE?</strong></CardTitle>
