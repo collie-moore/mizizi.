@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody
-} from 'reactstrap';
+import {} from 'reactstrap';
 import './myCard.css';
 
 

@@ -1,37 +1,37 @@
 import React from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Row, Col
-} from 'reactstrap';
+import {Jumbotron, Button} from 'reactstrap'
+import {Link} from 'react-router-dom'
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import './myCard.css'
 
-const Covid19 = (props) => {
-  return (
-    <div>
-      <div className='card'> <h3><strong>More information about COVID 19 pandemic in Kenya</strong></h3></div>
-     <div className='card'>
-     <Row>
-        <Col  sm='6'>
-        <Card>
-         <CardBody>
-          <CardTitle><strong><h3>Locations of the COVID-19 testing loactions in the country</h3></strong></CardTitle>
-          <CardText>Our Next sprint, sprint 3 will see this area populated with a map showing all the locations of the testing centers in the country.</CardText>
-        </CardBody>
-      </Card>  
-        </Col>
-        <Col  sm='6'>
-        <Card>
-         <CardBody>
-          <CardTitle><strong><h3>Heat Map showing the locations of the COVID-19 confirmed cases in the country</h3></strong></CardTitle>
-          <CardText>Our Next sprint, sprint 3 will see this area populated with a map showing all the locations of the testing centers in the country.</CardText>
-        </CardBody>
-      </Card>  
-        </Col>
 
-      </Row>
-     </div>
-    </div>
-  );
-};
+export class Maps extends React.Component {
+  render() {
+    const mapStyles = {
+      width: "100%",
+      height: "100%",
+    };
 
-export default Covid19;
+    return (
+      <div className='' >
+        <br>
+        </br>
+        <div><h3><strong>Locations of the COVID-19 testing Centers</strong></h3></div>
+        <div><h4>For information about confirmed cases and their locations in the country,<Link to="/Covid19-heatmap"> <Button color="secondary" size="sm">Click Here</Button></Link></h4></div>
+        <Map className='card1'
+        google={this.props.google}
+        zoom={8}
+        style={mapStyles}
+        initialCenter={{ lat: -1.2884, lng: 36.8233 }}
+      >
+        <Marker position={{ lat: -1.2884, lng: 36.8233 }} />
+      </Map>
+      </div>
+     
+    );
+  }
+}
+
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyBfx1w0wh0cODVCQ3mfPX9Xz__xa1gSWHA",
+})(Maps);

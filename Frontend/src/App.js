@@ -11,6 +11,7 @@ import MyCard from './Components/myCard';
 import FirstAid from './Components/firstAid';
 import SignUp from './Components/signupmodal';
 import About from './Components/About';
+import COVID from './Components/COVID';
 function App() {
  
   return (
@@ -26,8 +27,9 @@ function App() {
           <Route path="/FindChemist" component={FindChemist} />
           <Route path="/signup" component={SignUp} />
           <Route path="/FindChemist" component={FindChemist} />
+          <Route path="/COVID"component={COVID}/>
           </Switch>
-          < Footer/>
+          <Footer/>
         </Router>
       </div> 
    
