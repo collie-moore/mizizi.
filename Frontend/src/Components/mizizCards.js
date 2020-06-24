@@ -1,25 +1,21 @@
 import React from 'react';
-import {
-  Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody
-} from 'reactstrap';
-import './myCard.css';
+import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody} from 'reactstrap';
 import { Link } from 'react-router-dom';
-import SignUp from './signupmodal';
 
 const Cards = (props) => {
   return (
-      <div className="card">
-     <div className="">  
-    <CardDeck>
-    <Card lg='3'>
+
+ <div className="card">
+   <div className="">  
+   <CardDeck>  
+   <Card>
         <CardImg top width="100%" src="/img/download.jpg" alt="Card image cap" />
         <CardBody>
           <CardTitle><b>COVID-19</b></CardTitle>
           <CardText>Learn more about COVID-19 here!.</CardText>
-          <Link></Link>
         </CardBody>
-        <Link to="/Covid19"> <Button color="primary" size="lg-4">Learn more</Button></Link>
-      </Card>      
+        <Link to="/Covid19"><Button color="primary" size="sm">Learn More</Button></Link>
+      </Card>    
       <Card>
         <CardImg top width="100%" src="/img/firstaid.png" alt="Card image cap" />
         <CardBody>
@@ -46,7 +42,7 @@ const Cards = (props) => {
       </Card>
     </CardDeck>
     </div>  
-      </div>
+  </div>
   );
 };
 

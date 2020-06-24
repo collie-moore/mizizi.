@@ -1,10 +1,11 @@
 import React from "react";
-import{Input}from 'reactstrap';
+import{Input, Button}from 'reactstrap';
+import {Link} from 'react-router-dom'
 import './sigg.css';
 
-const Sign = (props) => { 
+const SignUp = (props) => { 
         return (
-            <div className="cont" >
+            <div className="container" >
             <form className="con">
                 <h3>Sign Up</h3>
 
@@ -41,11 +42,11 @@ const Sign = (props) => {
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <br></br>
                 <p className="have text-right">
-                    Have an account? <a href="/.mysign.js">sign in</a>
+                    Have an account? <Link to="/LogIn"><Button color="link">Log In</Button></Link>
                     
                 </p>
             </form>
             </div>
         );
     }
-export default Sign;
+export default SignUp;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Jumbotron, Button} from 'reactstrap'
+import {Button} from 'reactstrap'
 import {Link} from 'react-router-dom'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import './myCard.css'

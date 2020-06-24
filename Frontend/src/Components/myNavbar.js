@@ -8,6 +8,7 @@ function Nav(){
       <nav className='nav'>
         <h3>Mizizi</h3>
         <ul className="nav-link">
+          <li> Sign Up</li>
           
           
         </ul>
