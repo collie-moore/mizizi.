@@ -1,16 +1,14 @@
+
 import React from 'react';
 import './myNavbar.css'
 
-function Nav(){
+function Nav() {
 
   return (
     <div>
       <nav className='nav'>
         <h3>Mizizi</h3>
-        <ul className="nav-link">
-          
-          
-        </ul>
+        <ul className="nav-link"></ul>
       </nav>
     
     </div>

@@ -91,6 +91,13 @@
   color: dodgerblue;
 }
 
+.boxstyle{
+  border: 10px;
+  text-align: center;
+  font-size: small;
+  color: #61dafb;
+}
+
 .dropTog{
   max-height: min-content;
   max-width: min-content;
