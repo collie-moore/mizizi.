@@ -9,7 +9,7 @@ export default class FetchTestData extends Component {
        
         return (
             <div>
-               <iframe className="myFrame" src='https://webchat.botframework.com/embed/mzizi1-bot?s=p3GWnEQYvtU.hzyWfpCY7xwBpFkriUiRIkLraFyB3J8WOTDjpOpJIt8'> </iframe>
+               <iframe className="myFrame" title="uniq" src='https://webchat.botframework.com/embed/mzizi1-bot?s=p3GWnEQYvtU.hzyWfpCY7xwBpFkriUiRIkLraFyB3J8WOTDjpOpJIt8'> </iframe>
         </div>
         );
             }

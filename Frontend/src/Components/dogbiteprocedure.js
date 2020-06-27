@@ -9,28 +9,48 @@ import {
 
 const items = [
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 1 ',
-    caption: 'Medical fact 1 '
+    src: '/img/bites/dog bite 1.png',
+    altText: 'examine the bite ',
+    caption: 'examine the bite  '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 2',
-    caption: 'Medical fact 2'
+    src: '/img/bites/dog bite 2.png',
+    altText: 'wash wound thoroughly with soap and water ',
+    caption: 'wash wound thoroughly with soap and water '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 3 ',
-    caption: 'Medical fact 3 '
+    src: '/img/bites/dog bite 3.png',
+    altText: 'apply pressure to stop bleeding incase the wound is bleeding ',
+    caption: 'apply pressure to stop bleeding incase the wound is bleeding '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'apply a clean sterile dressing ',
-    caption: 'apply a clean sterile dressing '
+    src: '/img/bites/dog bite 4.png',
+    altText: 'apply antibiotic ointment ',
+    caption: 'apply antibiotic ointment '
+  },
+  {
+    src: '/img/bites/dog bite 5.png',
+    altText: 'bandage bite with clean cloth ',
+    caption: 'bandage bite with clean cloth '
+  },
+  {
+    src: '/img/bites/dog bite 6.png',
+    altText: 'update tetanus vaccine',
+    caption: 'update tetanus vaccine'
+  },
+  {
+    src: '/img/bites/dog bite 7.png',
+    altText: 'find out dog’s vaccine status ',
+    caption: 'find out dog’s vaccine status '
+  },
+  {
+    src: '/img/bites/dog bite 8.png',
+    altText: 'monitor wound for swelling, pus, fever or worsening pain incase of these seek medical assistance  ',
+    caption: 'monitor wound for swelling, pus, fever or worsening pain incase of these seek medical assistance  '
   }
 ];
 
-const Myfacts = (props) => {
+const DogProcedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -78,4 +98,4 @@ const Myfacts = (props) => {
   );
 }
 
-export default Myfacts;
+export default DogProcedure;

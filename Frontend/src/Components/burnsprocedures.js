@@ -9,28 +9,33 @@ import {
 
 const items = [
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 1 ',
-    caption: 'Medical fact 1 '
+    src: '/img/burns/b1.png',
+    altText: 'secure the environment by turning off fire',
+    caption: 'secure the environment by turning off fire '
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 2',
-    caption: 'Medical fact 2'
+    src: '/img/burns/b2.png',
+    altText: 'Slide 2',
+    caption: 'Slide 2'
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 3 ',
-    caption: 'Medical fact 3 '
+    src: '/img/burns/b3.png',
+    altText: 'Slide 3',
+    caption: 'Slide 3'
   },
   {
-    src: '/img/dodgerblue.png',
-    altText: 'apply a clean sterile dressing ',
-    caption: 'apply a clean sterile dressing '
+    src: '/img/burns/b4.png',
+    altText: 'Slide 4',
+    caption: 'Slide 4'
+  },
+  {
+    src: '/img/burns/b4.png',
+    altText: 'Slide 5',
+    caption: 'Slide 5'
   }
 ];
 
-const Myfacts = (props) => {
+const BurnsProc = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -78,4 +83,4 @@ const Myfacts = (props) => {
   );
 }
 
-export default Myfacts;
+export default BurnsProc;
