@@ -2,6 +2,9 @@ body{
     background-color: #339FFF;
     margin-bottom: 30px;
 }
+h3{
+    margin-left:140px;
+}
 .forma{
     background-color: #f9f9f9;
     width:600px;
@@ -32,6 +35,7 @@ body{
 }
 .form-control{
     margin:auto;
+    margin-left:140px;
     width:300px;
     height:20px;
     
@@ -42,6 +46,7 @@ body{
 .button{
     width: 310px;
     height:30px;
+    margin-left:140px;
     background-color:#339FFF;
     color: #ffffff;
     border-color: #339FFF;

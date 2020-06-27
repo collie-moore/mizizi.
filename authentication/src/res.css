@@ -15,6 +15,7 @@
 .fot h3{
      font-weight: bolder;
      padding:auto;
+     margin-left:140px;
      font-size: 45px;
 }
 .code{
@@ -24,6 +25,7 @@
 }
 .form-control{
     margin:auto;
+    margin-left:140px;
     width:300px;
     height:20px;
     
@@ -31,6 +33,7 @@
 .btn{
     width: 310px;
     height:30px;
+    margin-left:140px;
     background-color:#339FFF;
     color: #ffffff;
     border-color: #339FFF;
