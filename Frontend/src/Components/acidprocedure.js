@@ -7,6 +7,7 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+//Acid burn procedure normal carousel
 const items = [
   {
     src: '/img/burns/CHEM BURN 1.png',
@@ -74,6 +75,7 @@ const AcidProc = (props) => {
     );
   });
 
+  //Contents of the slides
   return (
     <Carousel
       activeIndex={activeIndex}

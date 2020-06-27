@@ -11,46 +11,44 @@ import FireExpose from './fireExpo';
 import Bites from './bites';
 import Dogbyte from './doggybite';
 import './myCard.css'
+
 const FirstAid = (props) => {
  
   return (
     <div className='card'>
+      <h1>First Aid Procedures</h1>
+      <h4>First aid is an essential life saving service in most emergencies.<br></br>
+       Please follow the following instrustions keenly</h4><br></br>
 
-          <h1>First Aid Procedures</h1>
-         
-          <h4>First aid is an essential life saving service in most emergencies.<br></br> Please follow the following instrustions keenly</h4>
-            <br></br>
       <Table striped>
-      <tbody>
-        <tr>
-          <td><Burn /></td>
-          <td>
-            <FireExpose />
-            <br></br>
-            <AcidBurn />
-            <br></br>
-            <HotWater />
-            <br></br>
+        <tbody>
+          <tr>
+            <td><Burn /></td>
+              <td>
+                <FireExpose />
+                <br></br>
+                <AcidBurn />
+                <br></br>
+                <HotWater />
+                <br></br>
+              </td>
+          </tr>
+          <tr>
+            <td><Cuts /></td>
+            <td><BruisedI />
+            </td>
             
-          </td>
-          
-        </tr>
-        <tr>
-          <td><Cuts /></td>
-          <td><BruisedI />
-          </td>
-          
-        </tr>
-       
-        <tr>
-          <td><Bites /></td>
-          <td>
-            <Dogbyte />
-          </td>
-          
-        </tr>
-      </tbody>
-    </Table>
+          </tr>
+        
+          <tr>
+            <td><Bites /></td>
+            <td>
+              <Dogbyte />
+            </td>
+            
+          </tr>
+        </tbody>
+      </Table>
     
     </div>
   );
