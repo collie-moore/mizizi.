@@ -11,6 +11,8 @@ import FireExpose from './fireExpo';
 import Bites from './bites';
 import Dogbyte from './doggybite';
 import './myCard.css'
+import ScrapedKnees from './knees';
+import Deepcut from './cutdeep';
 
 const FirstAid = (props) => {
  
@@ -36,6 +38,10 @@ const FirstAid = (props) => {
           <tr>
             <td><Cuts /></td>
             <td><BruisedI />
+            <br></br>
+            <ScrapedKnees />
+            <br></br>
+            <Deepcut />
             </td>
             
           </tr>

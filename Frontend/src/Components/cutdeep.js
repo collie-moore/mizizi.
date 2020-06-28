@@ -1,27 +1,24 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
-import AcidProc from './acidprocedure';
+import Deeprocedure from './deepcutprocedure';
 
-const AcidBurn = (props) => {
-
-  const { className } = props;
+const Deepcut = (props) => {
+  const {
+    className
+  } = props;
 
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
-  //Second type of burn
-  //<AcidProc /> contains the acid burn procedure
   return (
     <div>
-      <Button color="link" onClick={toggle}>Acid Burn</Button> 
+      <Button color="link" onClick={toggle}>Deep Cut</Button>
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-       
         <ModalBody>
-         <AcidProc /> 
-           </ModalBody>
-
+          <Deeprocedure />
+         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
@@ -30,4 +27,4 @@ const AcidBurn = (props) => {
   );
 }
 
-export default AcidBurn;
+export default Deepcut;

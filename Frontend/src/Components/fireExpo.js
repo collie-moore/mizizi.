@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter  } from 'reactstrap';
-import BurnsProc from './burnsprocedures';
 import AppApi from './testApi';
 
 const FireExpose = (props) => {

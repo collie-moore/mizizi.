@@ -1,27 +1,24 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
-import AcidProc from './acidprocedure';
+import Kneeprocedure from './kneesprocedure';
 
-const AcidBurn = (props) => {
-
-  const { className } = props;
+const ScrapedKnees = (props) => {
+  const {
+    className
+  } = props;
 
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
-  //Second type of burn
-  //<AcidProc /> contains the acid burn procedure
   return (
     <div>
-      <Button color="link" onClick={toggle}>Acid Burn</Button> 
+      <Button color="link" onClick={toggle}>Scraped knees and elbows</Button>
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-       
         <ModalBody>
-         <AcidProc /> 
-           </ModalBody>
-
+          <Kneeprocedure />
+         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
@@ -30,4 +27,4 @@ const AcidBurn = (props) => {
   );
 }
 
-export default AcidBurn;
+export default ScrapedKnees;

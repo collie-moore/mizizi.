@@ -33,7 +33,7 @@ const Cards = (props) => {
           <CardTitle><b>SYMPTOMS CHECKER</b></CardTitle>
           <CardText>Check out what you maybe suffering from.</CardText>
         </CardBody>
-        <Link to="/Mysign"><Button color="primary" size="sm">Get Started</Button></Link>
+        <Link to="/signup"><Button color="primary" size="sm">Get Started</Button></Link>
       </Card>
       <Card>
         <CardImg top width="100%" src="/img/findachemist.jpg" alt="Card image cap" />

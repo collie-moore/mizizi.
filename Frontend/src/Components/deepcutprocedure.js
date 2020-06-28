@@ -7,41 +7,40 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-//Acid burn procedure normal carousel
 const items = [
   {
     src: '/img/burns/CHEM BURN 1.png',
-    altText: 'remove casualty from area of exposure ',
-    caption: 'remove casualty from area of exposure  '
+    altText: 'secure the environment by turning off fire',
+    caption: 'secure the environment by turning off fire '
   },
   {
     src: '/img/burns/CHEM burn 2.png',
-    altText: 'remove all clothing or jewellery around wound ',
-    caption: 'remove all clothing or jewellery around wound '
+    altText: 'Slide 2',
+    caption: 'Slide 2'
   },
   {
     src: '/img/burns/CHEM burn 3.png',
-    altText: 'wash wound using only running water ',
-    caption: 'wash wound using only running water '
+    altText: 'Slide 3',
+    caption: 'Slide 3'
   },
   {
     src: '/img/burns/CHEM burn 4.png',
-    altText: 'apply a clean sterile dressing ',
-    caption: 'apply a clean sterile dressing '
+    altText: 'Slide 4',
+    caption: 'Slide 4'
   },
   {
     src: '/img/burns/CHEM burn 5.png',
-    altText: 'use painkiller ',
-    caption: 'use painkiller '
+    altText: 'Slide 5',
+    caption: 'Slide 5'
   },
   {
     src: '/img/burns/CHEM burn 6.png',
-    altText: 'seek medical assistance ',
-    caption: 'seek medical assistance '
+    altText: 'Slide 6',
+    caption: 'Slide 6'
   }
 ];
 
-const AcidProc = (props) => {
+const Deeprocedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -75,7 +74,6 @@ const AcidProc = (props) => {
     );
   });
 
-  //Contents of the slides
   return (
     <Carousel
       activeIndex={activeIndex}
@@ -90,4 +88,4 @@ const AcidProc = (props) => {
   );
 }
 
-export default AcidProc;
+export default Deeprocedure;

@@ -1,80 +1,63 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, {useState, useEffect}  from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import {API_BASE_URL} from './config';
+//import logo from './logo.svg';
+import './facts.css';
 
-const items = [
-  {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 1 ',
-    caption: 'Medical fact 1 '
-  },
-  {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 2',
-    caption: 'Medical fact 2'
-  },
-  {
-    src: '/img/dodgerblue.png',
-    altText: 'Medical fact 3 ',
-    caption: 'Medical fact 3 '
-  },
-  {
-    src: '/img/dodgerblue.png',
-    altText: 'apply a clean sterile dressing ',
-    caption: 'apply a clean sterile dressing '
-  }
-];
-
-const Myfacts = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} /><br></br>
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
-
+function Myfacts() {
+  const [cards, setItemsInfo] = useState([]);
+useEffect(()=>{
+  fetch(`${API_BASE_URL}/users`)
+  .then( response => response.json())
+  .then(json => setItemsInfo(json))
+}, []);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+<Carousel
+  swipeable={false}
+  draggable={false}
+  showDots={true}
+  responsive={responsive}
+  ssr={true} // means to render carousel on server-side.
+  infinite={true}
+  autoPlaySpeed={1000}
+  keyBoardControl={true}
+  customTransition="all .5"
+  transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px"
+>
+{
+    cards.map((card) => (
+      <div key={card.id} className="boxstyle">
+        
+        <h4>{card.name}</h4>
+        <h6>Your skin works hard. Not only is it the largest organ in the body, but it defends against disease and infection, regulates your temperature and aids in vitamin production.</h6>
+      </div>
+    ))
+  }
+
+</Carousel>
   );
 }
 

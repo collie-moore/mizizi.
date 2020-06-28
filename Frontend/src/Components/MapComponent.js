@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import mapStyles from './mapStyle';
 import config from './config2';
+import './mizizi.css';
 
-function FindChemist(props) {
+function MapComponent(props) {
   const [zoomLevel, setZoomLevel] = useState(config.zoomLevel);
   const [lat, setLat] = useState(config.lat || 51.4934);
   const [lng, setLng] = useState(config.lng || 0.0098);
@@ -61,4 +62,4 @@ function FindChemist(props) {
   );
 };
 
-export default GoogleApiWrapper({ apiKey: config.apiKey })(FindChemist);
+export default GoogleApiWrapper({ apiKey: config.apiKey })(MapComponent);
