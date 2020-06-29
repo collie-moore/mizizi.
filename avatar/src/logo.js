@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Avatar from 'react-avatar';
 import './ava.css';
 import './myNavbar.css';
+//monday
 
 class SettingsMenu extends Component {
     state = {
