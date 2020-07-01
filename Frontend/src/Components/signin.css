@@ -4,6 +4,7 @@ body{
 }
 .forma{
     background-color: #f9f9f9;
+    width:600px;
     height:500px;
     border-style: solid;
     border-color: #f9f9f9;

@@ -20,7 +20,6 @@ import Covid19Locations from './Components/Covid19Locations';
 import Symptoms from './Components/symptoms';
 import Call from './Components/testing';
 import Asymptoms from './Components/asymptom';
-import Facts from './Components/facts';
 
 
 
