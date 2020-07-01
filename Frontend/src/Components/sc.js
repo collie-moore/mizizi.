@@ -1,8 +1,5 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import Asymptoms from "./asymptom";
-
-
-
 export default class DisplayApi extends Component {
   
   state = {
@@ -36,6 +33,6 @@ export default class DisplayApi extends Component {
       <Asymptoms asymptom={this.state.asymptom} />
     )
   }
-}
+}*/
 
 
