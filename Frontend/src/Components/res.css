@@ -1,6 +1,5 @@
 .fot{
     background-color: #f9f9f9;
-    width:600px;
     height:550px;
     border-style: solid;
     border-color: #f9f9f9;
@@ -21,7 +20,6 @@
 .form-control{
     margin:auto;
     margin-left:140px;
-    width:300px;
     height:20px;
     
 }

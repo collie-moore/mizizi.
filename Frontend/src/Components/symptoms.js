@@ -6,6 +6,7 @@ const Symptoms = (props) => {
   return (
     <div >
       <div><h2><strong>Symptoms Checker</strong></h2></div>
+      
     <Form className='container1'>
       <Row form>
       </Row>

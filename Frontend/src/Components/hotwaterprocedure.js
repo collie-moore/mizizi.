@@ -9,34 +9,24 @@ import {
 
 const items = [
   {
-    src: '/img/burns/CHEM BURN 1.png',
+    src: '/img/burns/steam burn 1.png',
     altText: 'secure the environment by turning off fire',
     caption: 'secure the environment by turning off fire '
   },
   {
-    src: '/img/burns/CHEM burn 2.png',
+    src: '/img/burns/steam burn 2.png',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    src: '/img/burns/CHEM burn 3.png',
+    src: '/img/burns/steam burn 3.png',
     altText: 'Slide 3',
     caption: 'Slide 3'
   },
   {
-    src: '/img/burns/CHEM burn 4.png',
+    src: '/img/burns/steam burn 4.png',
     altText: 'Slide 4',
     caption: 'Slide 4'
-  },
-  {
-    src: '/img/burns/CHEM burn 5.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
-  },
-  {
-    src: '/img/burns/CHEM burn 6.png',
-    altText: 'Slide 6',
-    caption: 'Slide 6'
   }
 ];
 

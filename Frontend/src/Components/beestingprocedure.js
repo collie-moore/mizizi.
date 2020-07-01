@@ -9,38 +9,24 @@ import {
 
 const items = [
   {
-    src: '/img/facts/fact6.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/bites/bee sting 1.png',
+    altText: 'wash eye under running water for up to 15 minutes ',
+    caption: 'wash eye under running water for up to 15 minutes  '
   },
   {
-    src: '/img/facts/fact1.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/bites/bee sting 2.png',
+    altText: 'apply cold compress ',
+    caption: 'apply cold compress '
   },
   {
-    src: '/img/facts/fact2.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact3.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact4.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact5.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/bites/bee sting 3.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   }
+ 
 ];
 
-const Facts = (props) => {
+const Beeprocedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -88,4 +74,4 @@ const Facts = (props) => {
   );
 }
 
-export default Facts;
+export default Beeprocedure;

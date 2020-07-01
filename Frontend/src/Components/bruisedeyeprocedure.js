@@ -9,17 +9,17 @@ import {
 
 const items = [
   {
-    src: '/img/cuts/chem eye 1.png',
+    src: '/img/burns/chem eye 1.png',
     altText: 'wash eye under running water for up to 15 minutes ',
     caption: 'wash eye under running water for up to 15 minutes  '
   },
   {
-    src: '/img/cuts/chem eye 2.png',
+    src: '/img/burns/chem eye 2.png',
     altText: 'apply cold compress ',
     caption: 'apply cold compress '
   },
   {
-    src: '/img/cuts/chem eye 3.png',
+    src: '/img/burns/chem eye 3.png',
     altText: 'seek medical assistance ',
     caption: 'seek medical assistance '
   }

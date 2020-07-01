@@ -4,34 +4,37 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
+  Row,
+  Col
 } from 'reactstrap';
+import '../App.css';
 
 const items = [
   {
     src: '/img/burns/b1.png',
-    altText: 'secure the environment by turning off fire',
-    caption: 'secure the environment by turning off fire '
+    altText: '1',
+    caption: '1'
   },
   {
     src: '/img/burns/b2.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: '',
+    caption: '',
   },
   {
     src: '/img/burns/b3.png',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: '',
+    caption: ''
   },
   {
     src: '/img/burns/b4.png',
-    altText: 'Slide 4',
-    caption: 'Slide 4'
+    altText: '',
+    caption: ''
   },
   {
     src: '/img/burns/b4.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
+    altText: '',
+    caption: ''
   }
 ];
 
@@ -64,13 +67,15 @@ const BurnsProc = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} /><br></br>
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption className="captxt" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel
+    <Row>
+      <Col sm="12">
+      <Carousel
       activeIndex={activeIndex}
       next={next}
       previous={previous}
@@ -80,6 +85,9 @@ const BurnsProc = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+      </Col>
+    </Row>
+    
   );
 }
 

@@ -1,11 +1,15 @@
 import React from "react";
 import './res.css';
 import { Link } from "react-router-dom";
+import { Row, Col } from "reactstrap";
 
 const Fogg = (props) => { 
     return ( 
         <div className="fort" >
         <form className="fot">
+            <Row>
+                <Col sm="6">
+                
             <h3>Forgot password?</h3>
 
             <div className="form-group">
@@ -28,6 +32,10 @@ const Fogg = (props) => {
 
         </div>
             <Link to="/Mysign" ><button onclick="window.location.href='#';"type="submit" className="btn btn-primary btn-block">Reset</button></Link>
+            
+            </Col>
+            <Col sm="6"></Col>
+            </Row>
         </form>
         </div>
 );

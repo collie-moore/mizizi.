@@ -3,7 +3,7 @@
 import React from 'react';
 import Burn from './burns';
 import Cuts from './cuts';
-import { Table } from 'reactstrap';
+import { Table, Row, Col } from 'reactstrap';
 import AcidBurn from './acid';
 import HotWater from './hotWater';
 import BruisedI from './bruisedEye';
@@ -13,11 +13,17 @@ import Dogbyte from './doggybite';
 import './myCard.css'
 import ScrapedKnees from './knees';
 import Deepcut from './cutdeep';
+import Nosebleed from './nsebleed';
+import Vemin from './vemin';
+import Beesting from './bee';
 
 const FirstAid = (props) => {
  
   return (
     <div className='card'>
+      <Row>
+        <Col sm="12">
+        
       <h1>First Aid Procedures</h1>
       <h4>First aid is an essential life saving service in most emergencies.<br></br>
        Please follow the following instrustions keenly</h4><br></br>
@@ -42,6 +48,8 @@ const FirstAid = (props) => {
             <ScrapedKnees />
             <br></br>
             <Deepcut />
+            <br></br>
+            <Nosebleed />
             </td>
             
           </tr>
@@ -50,12 +58,18 @@ const FirstAid = (props) => {
             <td><Bites /></td>
             <td>
               <Dogbyte />
+              <br></br>
+              <Vemin />
+              <br></br>
+              <Beesting />
             </td>
             
           </tr>
         </tbody>
       </Table>
     
+      </Col>
+      </Row>
     </div>
   );
 }

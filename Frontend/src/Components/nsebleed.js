@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
-import Sign from './signup';
+import Noseprocedure from './nosebloodprocedure';
 
-const SignUp = (props) => {
+const Nosebleed = (props) => {
   const {
     className
   } = props;
@@ -14,10 +14,10 @@ const SignUp = (props) => {
 
   return (
     <div>
-      <Button color="link" onClick={toggle}>Learn More</Button>
+      <Button color="link" onClick={toggle}>Nose Bleed</Button>
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
         <ModalBody>
-          <Sign />
+          <Noseprocedure />
          </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
@@ -27,4 +27,4 @@ const SignUp = (props) => {
   );
 }
 
-export default SignUp;
+export default Nosebleed;

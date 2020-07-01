@@ -1,6 +1,8 @@
 
 import React from 'react';
 import './myNavbar.css'
+import SettingsMenu from './logo';
+
 
 function Nav() {
 
@@ -9,6 +11,7 @@ function Nav() {
       <nav className='nav'>
         <h3>Mizizi</h3>
         <ul className="nav-link">
+          <SettingsMenu />
         </ul>
       </nav>
     

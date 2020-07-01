@@ -20,7 +20,14 @@ const MyCard = (props) => {
           <hr className="my-2" />
           <p>We are dedicated to provide adequate, acurate and consistent medical information to anyone with no access to hospitals!</p>
           <p className="lead">
-          <Link to="/About"> <Button color="primary" size="sm">Learn more</Button></Link>
+            <Row>
+              <Col sm='2'></Col>
+              <Col sm='8'>
+              <Link to="/About"> <Button color="primary" size="sm">Learn more</Button></Link>
+                </Col>
+                <Col sm='2'></Col>
+            </Row>
+          
           </p>
           </Jumbotron>
         </Col>

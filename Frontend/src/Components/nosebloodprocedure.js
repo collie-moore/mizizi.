@@ -9,38 +9,23 @@ import {
 
 const items = [
   {
-    src: '/img/facts/fact6.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/cuts/nose 1.png',
+    altText: 'secure the environment by turning off fire',
+    caption: 'secure the environment by turning off fire '
   },
   {
-    src: '/img/facts/fact1.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/cuts/nose 2.png',
+    altText: 'Slide 2',
+    caption: 'Slide 2'
   },
   {
-    src: '/img/facts/fact2.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact3.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact4.png',
-    altText: ' ',
-    caption: ' '
-  },
-  {
-    src: '/img/facts/fact5.png',
-    altText: ' ',
-    caption: ' '
+    src: '/img/cuts/nose dont.png',
+    altText: 'Slide 3',
+    caption: 'Slide 3'
   }
 ];
 
-const Facts = (props) => {
+const Noseprocedure = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -88,4 +73,4 @@ const Facts = (props) => {
   );
 }
 
-export default Facts;
+export default Noseprocedure;

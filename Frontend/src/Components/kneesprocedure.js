@@ -9,35 +9,41 @@ import {
 
 const items = [
   {
-    src: '/img/burns/CHEM BURN 1.png',
-    altText: 'secure the environment by turning off fire',
-    caption: 'secure the environment by turning off fire '
+    src: '/img/cuts/severe bleed 1.png',
+    altText: 'wash eye under running water for up to 15 minutes ',
+    caption: 'wash eye under running water for up to 15 minutes  '
   },
   {
-    src: '/img/burns/CHEM burn 2.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: '/img/cuts/severe bleed 2.png',
+    altText: 'apply cold compress ',
+    caption: 'apply cold compress '
   },
   {
-    src: '/img/burns/CHEM burn 3.png',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: '/img/cuts/severe bleed 3.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   },
   {
-    src: '/img/burns/CHEM burn 4.png',
-    altText: 'Slide 4',
-    caption: 'Slide 4'
+    src: '/img/cuts/severe bleed 4.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   },
   {
-    src: '/img/burns/CHEM burn 5.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
+    src: '/img/cuts/severe bleed 5.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   },
   {
-    src: '/img/burns/CHEM burn 6.png',
-    altText: 'Slide 6',
-    caption: 'Slide 6'
+    src: '/img/cuts/severe bleed 6.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
+  },
+  {
+    src: '/img/cuts/severe bleed 7.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   }
+
 ];
 
 const Kneeprocedure = (props) => {

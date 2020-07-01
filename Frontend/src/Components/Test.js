@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, Row, Col } from 'reactstrap';
 
 import FetchTestData from './FetchTestData';
 const ModalExample = (props) => {
@@ -20,7 +20,9 @@ const ModalExample = (props) => {
                     <Button color="link" onClick={toggle}>Start>>{buttonLabel}</Button>
                 </Form>
             </div>
-
+        
+            <Row className='container2'>
+          <Col sm='12'>
             <Modal isOpen={modal} toggle={toggle} className="myMod" >
                 <ModalHeader toggle={toggle}>Welcome to Mizizi!! Test your knowledge</ModalHeader>
                 <ModalBody>
@@ -31,6 +33,8 @@ const ModalExample = (props) => {
                     <Button color="primary" onClick={toggle}>I'm Done!</Button>
                 </ModalFooter>
             </Modal>
+            </Col>
+            </Row>
         </div>
     );
 }
