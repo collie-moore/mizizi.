@@ -1,3 +1,3 @@
-const API_BASE_URL = 'priaid-symptom-checker-v1.p.rapidapi.com';
+const API_BASE_URL = 'https://mizizi.herokuapp.com';
 
 export {API_BASE_URL };

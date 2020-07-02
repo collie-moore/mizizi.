@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import{Input , Button }from 'reactstrap';
+import{Input , Button, Row, Col }from 'reactstrap';
 import axios from 'axios';
 import './sigg.css';
 import { Link } from 'react-router-dom';
@@ -34,7 +34,9 @@ render(){
     const{ UserId, Phone, Email, Password } = this.state
         return (
             <div className="cont" >
+                <Row>
             <form className="con" onSubmit= {this.submitHandler}>
+                <Col sm="12">
                 <h3>Sign Up</h3>
 
                 <div className="form-group">
@@ -72,7 +74,9 @@ render(){
                     Have an account? <Link to="/Mysign"><Button color="link" className="btnSignIn" >Sign in</Button></Link>
                     
                 </p>
+                </Col>
             </form>
+            </Row>
             </div>
         );
 

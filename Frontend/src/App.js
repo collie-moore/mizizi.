@@ -1,9 +1,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router , Switch, Route } from 'react-router-dom';
-
 import './App.css';
-
 import Cards from './Components/mizizCards';
 import Footer from './Components/myFooter';
 import Navbar0 from './Components/myNavbar';
@@ -18,8 +16,7 @@ import Login from './Components/Mysign';
 import MapComponent from './Components/MapComponent';
 import Covid19Locations from './Components/Covid19Locations';
 import Symptoms from './Components/symptoms';
-import Call from './Components/testing';
-import Asymptoms from './Components/asymptom';
+import Diagnosis from './Components/diagnose';
 
 
 
@@ -28,7 +25,7 @@ function App() {
   return (
     <div className="App">
         <Router>
-        <Navbar0 />
+          <Navbar0 />
             <Switch >
               <Route path="/" exact component={Home} />
               <Route path="/About" component={About} />
@@ -45,20 +42,16 @@ function App() {
               <Route path="/Covid19Locations" component={Covid19Locations}/>
             </Switch>
           < Footer/>
-          
         </Router>
     </div> 
-   
-  
   );
 }
 
-const Home =()=>(
+const Home =()=> (
   <div>
     <MyCard/>
     <Cards /> 
-    <Call />
-    <Asymptoms />
+    <Diagnosis />
   </div>
 )
 

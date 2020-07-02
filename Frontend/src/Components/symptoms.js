@@ -13,13 +13,14 @@ const Symptoms = (props) => {
       <Col >
       <FormGroup>
         <Label for="exampleEmail">Input your symptoms</Label>
+        
         <Input />
         </FormGroup>
         </Col>
       <Row form>
         <Col md={4}>
           <FormGroup>
-            <Label for="exampleAge">Age</Label>
+            <Label for="exampleAge">Date of Birth</Label>
             <Input type="text" name="age" id="exampleAge"/>
           </FormGroup>
         </Col>

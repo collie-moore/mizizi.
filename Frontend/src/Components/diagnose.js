@@ -1,13 +1,16 @@
 import React , { Component } from 'react';
  //import Asymptoms from "./Asymptoms";
 
-class Symptom extends Component{
+class Diagnosis extends Component{
    state = {
-    asymptom: []  //Object that stores the output of the API call
+    diag: []  //Object that stores the output of the API call
  }
   componentDidMount(){
-    const qp = '?language=en-gb';
-    const uri = 'https://priaid-symptom-checker-v1.p.rapidapi.com/symptoms' + qp;
+    const ln = '&language=en-gb';
+    const sym = '?symptoms=%5B234%2C11%5D';
+    const yob = '&year_of_birth=1984';
+    const gen = '&gender=male';
+    const uri = 'https://priaid-symptom-checker-v1.p.rapidapi.com/diagnosis' + sym + ln + gen + yob;
     
   
   let h = new Headers();
@@ -18,6 +21,7 @@ class Symptom extends Component{
   let req = new Request( uri, {
     method: 'GET',
     headers: h
+
   });
     fetch(req)
     .then( (response) => {
@@ -29,15 +33,17 @@ class Symptom extends Component{
     })
     .then( (jsonData)=>{
       const keys = Object.values(jsonData);
-      const fetchedAsymptoms = [];
+      //console.log(jsonData)
+      const fetchedDiags = [];
       for (const key of keys){
-            fetchedAsymptoms.push({
+            fetchedDiags.push({
                 ...jsonData[key],
               id: key
             });
-       this.setState({ asymptom:  fetchedAsymptoms});
-       
+       this.setState({ diag:  fetchedDiags});
+      
       }
+      console.log(this.state.diag)
     })
     .catch( (err) => {
         console.log('ERROR:' , err.message);
@@ -46,11 +52,11 @@ class Symptom extends Component{
     render(){
       return(
       <div>
-  <center><h5>Symptoms list</h5></center>
+  <center><h5> User Diagnosis</h5></center>
       {
-        this.state.asymptom.map((symptom) => (
-          <div key={symptom.id.ID}>    
-             <center><h6>{symptom.id.Name}</h6></center>   
+        this.state.diag.map((udiag) => (
+          <div key={udiag.id.Issue.ID}>    
+             <center><h6>{udiag.id.Issue.Name}</h6></center>   
         </div>
 
     ))}
@@ -59,4 +65,4 @@ class Symptom extends Component{
  }
 
 }
-export default Symptom;
+export default Diagnosis;
