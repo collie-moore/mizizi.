@@ -20,13 +20,13 @@ class Sign extends Component{
     }
     submitHandler = e =>{
         e.preventDefault()
-        console.log(this.state)
+        //console.log(this.state)
         axios.post('#', this.state)
         .then(response =>{
-            console.log(response)
+           // console.log(response)
         })
         .catch(error => {
-            console.log(error)
+            //console.log(error)
         })
     }
 //const Sign = (props) => { 

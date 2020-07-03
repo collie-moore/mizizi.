@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, {useState, useEffect}  from 'react';
+/*import React, {useState, useEffect}  from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //import logo from './logo.svg';
@@ -72,4 +72,4 @@ useEffect(()=>{
   );
 }
 
-export default BurnsProc;
+export default BurnsProc;*/

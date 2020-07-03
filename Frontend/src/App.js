@@ -16,7 +16,6 @@ import Login from './Components/Mysign';
 import MapComponent from './Components/MapComponent';
 import Covid19Locations from './Components/Covid19Locations';
 import Symptoms from './Components/symptoms';
-import Diagnosis from './Components/diagnose';
 
 
 
@@ -51,7 +50,7 @@ const Home =()=> (
   <div>
     <MyCard/>
     <Cards /> 
-    <Diagnosis />
+   
   </div>
 )
 

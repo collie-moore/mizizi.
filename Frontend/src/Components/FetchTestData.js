@@ -12,7 +12,7 @@ export default class FetchTestData extends Component {
             <div>
                 <Row className='container2'>
                     <Col sm='12'>
-                        <iframe className="myFrame" title="uniq" src='https://webchat.botframework.com/embed/mzizi1-bot?s=p3GWnEQYvtU.hzyWfpCY7xwBpFkriUiRIkLraFyB3J8WOTDjpOpJIt8'> </iframe>
+                        <iframe className="myFrame" title="uniq" src='https://webchat.botframework.com/embed/mizizi1-bot?s=qn9knVTSdzA.mFzOoq624dVG50w-C3gnZuYO6i4RHCdW4ovhPpRsAtM%27'> </iframe>
                     </Col>
                 </Row>
             </div>

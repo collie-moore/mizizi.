@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React from 'react';
+/*import React from 'react';
 
 const Call = (props) => {
 
@@ -27,10 +27,10 @@ let req = new Request( uri, {
         }
     })
     .then( (jsonData)=>{
-        console.log(jsonData)
+       // console.log(jsonData)
     })
     .catch( (err) => {
-        console.log('ERROR:' , err.message);
+        //console.log('ERROR:' , err.message);
     });
 }
 
@@ -43,4 +43,4 @@ return(
 
 }
 
-export default Call;
+export default Call;*/

@@ -1,4 +1,4 @@
-import React , { Component } from 'react';
+/*import React , { Component } from 'react';
  //import Asymptoms from "./Asymptoms";
 
 class Diagnosis extends Component{
@@ -43,10 +43,10 @@ class Diagnosis extends Component{
        this.setState({ diag:  fetchedDiags});
       
       }
-      console.log(this.state.diag)
+      //console.log(this.state.diag)
     })
     .catch( (err) => {
-        console.log('ERROR:' , err.message);
+       // console.log('ERROR:' , err.message);
     });
   }
     render(){
@@ -65,4 +65,4 @@ class Diagnosis extends Component{
  }
 
 }
-export default Diagnosis;
+export default Diagnosis;*/

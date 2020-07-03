@@ -1,4 +1,4 @@
-import React , { Component } from 'react';
+/*import React , { Component } from 'react';
  //import Asymptoms from "./Asymptoms";
 
 class Symptom extends Component{
@@ -40,7 +40,7 @@ class Symptom extends Component{
       }
     })
     .catch( (err) => {
-        console.log('ERROR:' , err.message);
+        //console.log('ERROR:' , err.message);
     });
   }
     render(){
@@ -59,4 +59,4 @@ class Symptom extends Component{
  }
 
 }
-export default Symptom;
+export default Symptom;*/
