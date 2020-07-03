@@ -4,6 +4,7 @@ import { Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import config from './config2';
 import './sigg.css';
 
+
 const mapStyles = {
   width: '100%',
   height: '80%'
@@ -37,7 +38,7 @@ export class FindChemist extends Component {
   };
   render() {
     return (
-      <div style={{height:'100%'}}>
+      <div className="maploc" >
         <div className='container2'>
           <h4><strong>Our Partner Chemists and Pharmacies</strong></h4>
           <p>All our Chemist and Phamacy partner will appear on this map with their contacts and their working hours</p>

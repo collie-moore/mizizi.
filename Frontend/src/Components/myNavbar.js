@@ -3,19 +3,21 @@ import React from 'react';
 import './myNavbar.css'
 import SettingsMenu from './logo';
 
-function Nav() {
-
+import {  Navbar,  NavbarBrand, } from 'reactstrap';
+ 
+const Nav = (props) => {
+ 
+ 
   return (
     <div>
-      <nav className='nav'>
-      <h3>Mizizi</h3>
+      <Navbar className="nav" light>
+        <NavbarBrand href="/" className="mr-auto"><h3><strong>Mizizi</strong></h3></NavbarBrand>
         <ul className="nav-link">
           <SettingsMenu />
         </ul>
-      </nav>
-    
+      </Navbar>
     </div>
   );
 }
-
+ 
 export default Nav;

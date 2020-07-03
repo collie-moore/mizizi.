@@ -1,75 +1,81 @@
-/* eslint-disable jsx-a11y/alt-text */
-/*import React, {useState, useEffect}  from 'react';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-//import logo from './logo.svg';
-import './proc.css';
+import React, { useState } from 'react';
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
+} from 'reactstrap';
 
-function BurnsProc() {
-  const [cards, setItemsInfo] = useState([]);
+const items = [
+  {
+    src: '/img/burns/b1.png',
+    altText: 'wash eye under running water for up to 15 minutes ',
+    caption: 'wash eye under running water for up to 15 minutes  '
+  },
+  {
+    src: '/img/burns/b2.png',
+    altText: 'apply cold compress ',
+    caption: 'apply cold compress '
+  },
+  {
+    src: '/img/burns/b3.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
+  },
+  {
+    src: '/img/burns/b4.png',
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
+  }
+];
 
-useEffect(()=>{
-    fetch('https://mizizi.herokuapp.com/api/firstaid/list')
-    .then( response => response.json())
-    .then(json => 
-      //console.log(json)
-     setItemsInfo(json)
-     )
-    
-}, []);
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  };
+const BurnsProc = (props) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+
+  const slides = items.map((item) => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <img src={item.src} alt={item.altText} /><br></br>
+        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+      </CarouselItem>
+    );
+  });
+
   return (
-<Carousel
-  swipeable={false}
-  draggable={false}
-  showDots={true}
-  responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
-  infinite={true}
-  autoPlaySpeed={1000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
->
-
-
-{
-    cards.map((card) => (
-
-      <div>
-      <div key={card.id} className="boxstyle">
-      <h6>{card.title}</h6>
-        <h6>{card.category}</h6>
-        <h6>{card.text}</h6>
-        <img src={card.image} />
-        </div>
-      </div>
-    ))
-
-}
-
-</Carousel>
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+    >
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      {slides}
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+    </Carousel>
   );
 }
 
-export default BurnsProc;*/
+export default BurnsProc;

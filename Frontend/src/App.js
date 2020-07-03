@@ -12,10 +12,11 @@ import FirstAid from './Components/firstAid';
 import About from './Components/About';
 import Fogg from './Components/reset';
 import Sign from './Components/signup';
-import Login from './Components/Mysign';
+import Login from './Components/mysign';
 import MapComponent from './Components/MapComponent';
 import Covid19Locations from './Components/Covid19Locations';
 import Symptoms from './Components/symptoms';
+import Diagnosis from './Components/Diagnosis';
 
 
 
@@ -39,6 +40,7 @@ function App() {
               <Route path="/FindChemist" component={FindChemist} />
               <Route path = "/MapComponent" component={MapComponent}/>
               <Route path="/Covid19Locations" component={Covid19Locations}/>
+              <Route path="/Diagnosis" component={Diagnosis} />
             </Switch>
           < Footer/>
         </Router>

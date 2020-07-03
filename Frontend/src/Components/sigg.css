@@ -15,6 +15,9 @@
     padding:auto;
     font-size: 45px;
 }
+.sympt{
+    position: relative;
+}
 
 .labo{
     float: left;
@@ -29,6 +32,10 @@
     background-color:#339FFF;
     color: #ffffff;
     
+}
+
+.maploc{
+    height: 40em;
 }
 .have{
     float: right;

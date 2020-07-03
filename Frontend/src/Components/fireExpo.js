@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter  } from 'reactstrap';
+import BurnsProc from './burnsprocedures';
 
 const FireExpose = (props) => {
 
@@ -12,7 +13,7 @@ const FireExpose = (props) => {
       <Button color="link" onClick={toggle}>Exposure to fire</Button>
       <Modal color="blue" isOpen={modal} fade={false} toggle={toggle} className="burnproc">
         <ModalBody>
-         
+          <BurnsProc />
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>

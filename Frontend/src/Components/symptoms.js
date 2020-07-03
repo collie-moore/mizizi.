@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Row, Button, Form, FormGroup, Label, Input,  } from 'reactstrap';
 import './sigg.css'
+import Asynchronous from './autocomplete';
+import { Link } from 'react-router-dom';
 
 const Symptoms = (props) => {
   return (
@@ -13,8 +15,8 @@ const Symptoms = (props) => {
       <Col >
       <FormGroup>
         <Label for="exampleEmail">Input your symptoms</Label>
+        <Asynchronous className="sympt"/>
         
-        <Input />
         </FormGroup>
         </Col>
       <Row form>
@@ -37,7 +39,7 @@ const Symptoms = (props) => {
           </FormGroup>  
         </Col>
       </Row>
-      <Button color="primary" size="sm">Submit</Button>
+      <Link to="/Diagnosis"><Button color="primary" >Submit</Button></Link>
     </Form>
  </div>
   );

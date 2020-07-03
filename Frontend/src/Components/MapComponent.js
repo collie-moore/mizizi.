@@ -51,7 +51,7 @@ export class MapComponent extends Component {
   }
   render() {
     return (
-      <div>   
+      <div className='maploc'>   
        <div className='container2'>
        <h4><strong>COVID-19 Facilities Locations in Kenya</strong></h4>
         <p>Number of Beds indicated are for the facilities meant for the patients suffering from the virus and not the total number of hospital beds</p>
