@@ -4,22 +4,24 @@ import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
 import AcidProc from './acidprocedure';
 
 const AcidBurn = (props) => {
-  const {
-    className
-  } = props;
+
+  const { className } = props;
 
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
+  //Second type of burn
+  //<AcidProc /> contains the acid burn procedure
   return (
     <div>
-      <Button color="link" onClick={toggle}>Acid Burn</Button>
+      <Button color="link" onClick={toggle}>Acid Burn</Button> 
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
        
         <ModalBody>
-         <AcidProc />
+         <AcidProc /> 
            </ModalBody>
+
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>

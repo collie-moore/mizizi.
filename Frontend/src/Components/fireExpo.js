@@ -4,10 +4,8 @@ import { Button , Modal , ModalBody , ModalFooter  } from 'reactstrap';
 import BurnsProc from './burnsprocedures';
 
 const FireExpose = (props) => {
-  
 
   const [modal, setModal] = useState(false);
-
   const toggle = () => setModal(!modal);
 
   return (

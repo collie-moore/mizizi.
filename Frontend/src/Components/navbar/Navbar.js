@@ -25,8 +25,7 @@ const Corona = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-          <a href="/Home">Home</a>
-            <a href="/About">About Us</a>
+           <a href="/About">About Us</a>
             <a href="/Covid19"> COVID-19</a>
             <a href="/SignUp">Sign Up</a>
           </NavLinks>
@@ -49,7 +48,6 @@ const Corona = (props) => {
 export default Corona
 
 const NavBar = styled(animated.nav)`
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;

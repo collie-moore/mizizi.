@@ -1,21 +1,24 @@
 import React from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody} from 'reactstrap';
+import {
+  Card, Button, CardImg, CardTitle, CardText, CardDeck, CardBody
+} from 'reactstrap';
+import './myCard.css';
 import { Link } from 'react-router-dom';
 
 const Cards = (props) => {
   return (
-
- <div className="card">
-   <div className="">  
-   <CardDeck>  
-   <Card>
+      <div className="card">
+     <div className="">  
+    <CardDeck>
+    <Card >
         <CardImg top width="100%" src="/img/download.jpg" alt="Card image cap" />
         <CardBody>
           <CardTitle><b>COVID-19</b></CardTitle>
           <CardText>Learn more about COVID-19 here!.</CardText>
+          <Link></Link>
         </CardBody>
-        <Link to="/Covid19"><Button color="primary" size="sm">Learn More</Button></Link>
-      </Card>    
+        <Link to="/Covid19"> <Button color="primary" size="sm">Learn more</Button></Link>
+      </Card>      
       <Card>
         <CardImg top width="100%" src="/img/firstaid.png" alt="Card image cap" />
         <CardBody>
@@ -30,7 +33,7 @@ const Cards = (props) => {
           <CardTitle><b>SYMPTOMS CHECKER</b></CardTitle>
           <CardText>Check out what you maybe suffering from.</CardText>
         </CardBody>
-        <Link to="/Mysign"><Button color="primary" size="sm">Get Started</Button></Link>
+        <Link to="/signup"><Button color="primary" size="sm">Get Started</Button></Link>
       </Card>
       <Card>
         <CardImg top width="100%" src="/img/findachemist.jpg" alt="Card image cap" />
@@ -42,7 +45,7 @@ const Cards = (props) => {
       </Card>
     </CardDeck>
     </div>  
-  </div>
+      </div>
   );
 };
 

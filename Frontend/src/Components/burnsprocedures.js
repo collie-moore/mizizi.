@@ -10,28 +10,23 @@ import {
 const items = [
   {
     src: '/img/burns/b1.png',
-    altText: 'secure the environment by turning off fire',
-    caption: 'secure the environment by turning off fire '
+    altText: 'wash eye under running water for up to 15 minutes ',
+    caption: 'wash eye under running water for up to 15 minutes  '
   },
   {
     src: '/img/burns/b2.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'apply cold compress ',
+    caption: 'apply cold compress '
   },
   {
     src: '/img/burns/b3.png',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   },
   {
     src: '/img/burns/b4.png',
-    altText: 'Slide 4',
-    caption: 'Slide 4'
-  },
-  {
-    src: '/img/burns/b4.png',
-    altText: 'Slide 5',
-    caption: 'Slide 5'
+    altText: 'seek medical assistance ',
+    caption: 'seek medical assistance '
   }
 ];
 

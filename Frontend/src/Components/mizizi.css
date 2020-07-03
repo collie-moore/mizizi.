@@ -1,6 +1,14 @@
 .amdava{
     padding: 5;
-    background-color: black;
     
 
 }
+
+.map{
+    height: 20cm;
+}
+
+.maploc{
+    height: 40em;
+}
+

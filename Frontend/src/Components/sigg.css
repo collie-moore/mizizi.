@@ -1,6 +1,5 @@
 .con{
     background-color: #f9f9f9;
-    width:600px;
     height:700px;
     border-style: solid;
     border-color: #f9f9f9;
@@ -16,6 +15,9 @@
     padding:auto;
     font-size: 45px;
 }
+.sympt{
+    position: relative;
+}
 
 .labo{
     float: left;
@@ -24,17 +26,16 @@
 }
 .form-control{
     margin:auto;
-    width:300px;
-    height:20px;
     
 }
 .btn{
-    width: 310px;
-    height:30px;
     background-color:#339FFF;
     color: #ffffff;
-    border-color: #339FFF;
     
+}
+
+.maploc{
+    height: 40em;
 }
 .have{
     float: right;
@@ -43,6 +44,19 @@ font-size: 14px;
 }
 .select{
     margin:auto;
-    width:300px;
-    height:20px;
 }
+
+.container1{
+    padding: 4%;
+    
+    
+}
+img {
+   
+  border: 1px ;
+  }
+
+    
+   
+
+    

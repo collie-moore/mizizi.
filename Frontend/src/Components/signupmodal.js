@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import { Button , Modal , ModalBody , ModalFooter } from 'reactstrap';
-import Sign from './SignUp';
+import Sign from './signup';
 
 const SignUp = (props) => {
   const {
